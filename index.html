@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2808杨明瑞</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 书架页面 -->
+        <div id="bookshelf" class="page active">
+            <header class="app-header">
+                <h1>今日暂无阅读时长</h1>
+                <div class="header-icons">
+                    <button class="icon-button">🔍</button>
+                    <button class="icon-button">⋯</button>
+                </div>
+            </header>
+            <main>
+                <div class="tabs">
+                    <button class="tab active">书架</button>
+                    <button class="tab">浏览记录</button>
+                    <button class="tab">综合排序 ↓</button>
+                    <button class="tab">筛选 ▾</button>
+                    <button class="tab">管理</button>
+                </div>
+                <div class="empty-state">
+                    <p>还没有作品，就等你发现了</p>
+                    <p class="small">
+                        数据异常丢失?
+                        <a href="#" class="link">恢复数据 ›</a>
+                    </p>
+                    <button class="btn-primary">发现更多作品</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- 精选页面 -->
+        <div id="featured" class="page">
+            <header class="featured-header">
+                <nav class="top-nav">
+                    <a href="#" class="active">新书</a>
+                    <a href="#">男生</a>
+                    <a href="#">女生</a>
+                    <a href="#">漫画</a>
+                    <a href="#">听书</a>
+                    <button class="search-btn">🔍</button>
+                </nav>
+            </header>
+            <div class="featured-banner">
+                <img src="我的半岛.jpg" alt="" class="banner-img">
+            </div>
+            <div class="feature-nav">
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="分类.svg" alt="分类" class="nav-icon">
+                    </div>
+                    <span>分类</span>
+                </a>
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="排行.svg" alt="排行" class="nav-icon">
+                    </div>
+                    <span>排行</span>
+                </a>
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="三江.svg" alt="三江" class="nav-icon">
+                    </div>
+                    <span>三江</span>
+                </a>
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="剧场.svg" alt="剧场" class="nav-icon">
+                    </div>
+                    <span>剧场</span>
+                </a>
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="新书.svg" alt="新书" class="nav-icon">
+                    </div>
+                    <span>新书</span>
+                    <span class="badge">免费</span>
+                </a>
+                <a href="#" class="feature-nav-item">
+                    <div class="feature-icon">
+                        <img src="完本.svg" alt="完本" class="nav-icon">
+                    </div>
+                    <span>完本</span>
+                </a>
+            </div>
+            <div class="featured-section reborn-section">
+                <div class="section-header">
+                    <span class="tag-reborn">重生</span>
+                    <h2>2000年，梦一样的新世纪到来了</h2>
+                    <span class="arrow">›</span>
+                </div>
+            </div>
+            <div class="featured-section bestseller">
+                <div class="section-header">
+                    <h2>畅销精选</h2>
+                    <a href="#" class="more-link">更多 ›</a>
+                </div>
+                <div class="book-list">
+                    <div class="book-card">
+                        <img src="神农道君.jpg" alt="神农道君" class="book-cover">
+                        <div class="book-info">
+                            <h3>神农道君</h3>
+                            <p class="book-desc">以身为基，育原生种、养万法，成就神农道君！</p>
+                            <div class="book-meta">
+                                <span class="category">东方玄幻</span>
+                                <span class="word-count">260万字</span>
+                            </div>
+                            <div class="book-tags">
+                                <span class="tag">全新设定</span>
+                                <span class="tag">气运流</span>
+                                <span class="tag">天才流</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="这孩子打小就聪明.jpg" alt="这孩子打小就聪明" class="book-cover">
+                        <div class="book-info">
+                            <h3>文豪：这孩子打小就聪明</h3>
+                            <p class="book-desc">如何成为二十一世纪销量最高的短篇小说家</p>
+                            <div class="book-meta">
+                                <span class="category">都市生活</span>
+                                <span class="word-count">138万字</span>
+                            </div>
+                            <div class="book-tags">
+                                <span class="tag">都市爆款</span>
+                                <span class="tag">日常文</span>
+                                <span class="tag">文娱</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="华娱票房为王.jpg" alt="华娱：票房为王！" class="book-cover">
+                        <div class="book-info">
+                            <h3>华娱：票房为王！</h3>
+                            <p class="book-desc">携带着前世二十多年的表演经验，陈煜这一世，要用他的职业和演技，征服这个世界。</p>
+                            <div class="book-meta">
+                                <span class="category">娱乐明星</span>
+                                <span class="word-count">258万字</span>
+                            </div>
+                            <div class="book-tags">
+                                <span class="tag">影帝</span>
+                                <span class="tag">重生</span>
+                                <span class="tag">强者归来</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-section editor-picks">
+                <div class="section-header">
+                    <h2>主编力荐</h2>
+                    <a href="#" class="more-link">更多 ›</a>
+                </div>
+                <div class="picks-grid">
+                    <div class="pick-card">
+                        <img src="重回海岛悠然人生.jpg" alt="重回海岛悠然人生">
+                    </div>
+                    <div class="pick-card">
+                        <img src="快跑这个文明开挂了.jpg" alt="快跑这个文明开挂了">
+                    </div>
+                    <div class="pick-card">
+                        <img src="献祭成神.jpg" alt="献祭成神">
+                    </div>
+                    <div class="pick-card">
+                        <img src="知否.jpg" alt="知否-我是徐家子">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 听书页面 -->
+        <div id="listen" class="page">
+            <div class="search-container">
+                <input type="text" placeholder="我不可能是万古至主" class="search-input">
+                <button class="search-icon">🔍</button>
+                <button class="category-icon">☰</button>
+            </div>
+            
+            <div class="banner">
+                <img src="绝境黑夜.jpg" alt="绝境黑夜" class="banner-img">
+                <div class="banner-text">
+                    <h2>绝境黑夜</h2>
+                    <p>诡异世界，从建造安全屋开始</p>
+                </div>
+                <div class="banner-nav">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="feature-icons">
+                <div class="feature-icon">
+                    <img src="天天福利.svg" alt="天天福利">
+                    <span>天天福利</span>
+                </div>
+                <div class="feature-icon">
+                    <img src="排行.svg" alt="排行">
+                    <span>排行</span>
+                </div>
+                <div class="feature-icon">
+                    <img src="夜猫社.svg" alt="夜猫社">
+                    <span>夜猫社</span>
+                </div>
+                <div class="feature-icon">
+                    <img src="逐鹿纪.svg" alt="逐鹿纪">
+                    <span>逐鹿纪</span>
+                </div>
+                <div class="feature-icon">
+                    <img src="车载.svg" alt="车载">
+                    <span>车载</span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3>新书上架</h3>
+                    <a href="#" class="more-link">更多 ›</a>
+                </div>
+                <div class="book-grid">
+                    <div class="book-item">
+                        <img src="万世之名.jpg" alt="万世之名" class="book-cover">
+                        <h4>万世之名</h4>
+                        <p>玄幻·轻松</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="神佛竟是我自己.jpg" alt="神佛竟是我自己" class="book-cover">
+                        <h4>神佛竟是我自己</h4>
+                        <p>仙侠</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="天才俱乐部.jpg" alt="天才俱乐部" class="book-cover">
+                        <h4>天才俱乐部</h4>
+                        <p>科幻</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="乱世书.jpg" alt="乱世书" class="book-cover">
+                        <h4>乱世书</h4>
+                        <p>玄幻·轻松</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3>畅销精选</h3>
+                    <a href="#" class="more-link">更多 ›</a>
+                </div>
+                <div class="bestseller-list">
+                    <div class="bestseller-item">
+                        <img src="从水猴子开始成神.jpg" alt="从水猴子开始成神" class="book-cover">
+                        <div class="book-info">
+                            <h4>从水猴子开始成神</h4>
+                            <p class="book-desc">选择大宇努力！武师们为陆地宝藏奋打的头破血流，水...</p>
+                            <div class="book-meta">
+                                <span>玄幻·京大金·白玉京</span>
+                                <span class="separator">|</span>
+                                <span>轻松</span>
+                                <span class="separator">|</span>
+                                <span>爽趣</span>
+                            </div>
+                        </div>
+                        <span class="play-time">22分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 发现页面 -->
+        <div id="discover" class="page">
+            <div class="discover-header">
+                <nav class="discover-nav">
+                    <a href="#" class="active">广场</a>
+                    <a href="#">关注</a>
+                </nav>
+                <button class="search-icon">🔍</button>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="专栏.svg" alt="专栏" class="feature-icon">
+                    <span>专栏</span>
+                </div>
+                <div class="feature-item">
+                    <img src="书单.svg" alt="书单" class="feature-icon">
+                    <span>书单</span>
+                </div>
+                <div class="feature-item">
+                    <img src="点点圈.svg" alt="点点圈" class="feature-icon">
+                    <span>点点圈</span>
+                </div>
+                <div class="feature-item">
+                    <img src="新书投资.svg" alt="新书投资" class="feature-icon">
+                    <span>新书投资</span>
+                </div>
+                <div class="feature-item">
+                    <img src="红包广场.svg" alt="红包广场" class="feature-icon">
+                    <span>红包广场</span>
+                </div>
+                <div class="feature-item">
+                    <img src="周边购.svg" alt="周边购" class="feature-icon">
+                    <span>周边购</span>
+                </div>
+                <div class="feature-item">
+                    <img src="卡牌广场.svg" alt="卡牌广场" class="feature-icon">
+                    <span>卡牌广场</span>
+                </div>
+                <div class="feature-item">
+                    <img src="热门角色.svg" alt="热门角色" class="feature-icon">
+                    <span>热门角色</span>
+                </div>
+                <div class="feature-item">
+                    <img src="话题广场.svg" alt="话题广场" class="feature-icon">
+                    <span>话题广场</span>
+                </div>
+            </div>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="card-content">
+                        <h3>神系列</h3>
+                        <p>精彩连载直播</p>
+                    </div>
+                    <img src="神系列.jpg" alt="神系列" class="card-icon">
+                </div>
+                <div class="feature-card">
+                    <div class="card-content">
+                        <h3>活动中心</h3>
+                        <p>超多福利</p>
+                    </div>
+                    <img src="活动中心.jpg" alt="活动中心" class="card-icon">
+                </div>
+                <div class="feature-card">
+                    <div class="card-content">
+                        <h3>游戏中心</h3>
+                        <p>好玩有趣</p>
+                    </div>
+                    <img src="游戏中心.jpg" alt="游戏中心" class="card-icon">
+                </div>
+            </div>
+
+            <div class="discover-tags">
+                <span class="tag active">推荐</span>
+                <span class="tag">专栏</span>
+                <span class="tag">书单</span>
+                <span class="tag">书帖</span>
+                <span class="tag">兴趣贴</span>
+                <span class="tag">彩蛋</span>
+                <span class="tag">QQ图谱</span>
+            </div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="昊朝古.jpg" alt="吴朝古" class="user-avatar">
+                        <div class="user-info">
+                            <h4>吴朝古</h4>
+                            <p>书单 · 作家书单</p>
+                        </div>
+                        <button class="more-options">⋮</button>
+                    </div>
+                    <div class="post-content">
+                        <h3>穿越必备秘籍：真实的"功法"武功、魔法、烹饪、巫术、五术......</h3>
+                        <div class="book-grid">
+                            <img src="读心术.jpg" alt="读心术" class="book-cover">
+                            <img src="垃圾魔法书.jpg" alt="垃圾魔法书" class="book-cover">
+                            <img src="风水宝典.jpg" alt="风水宝典" class="book-cover">
+                            <img src="巫术的历史.jpg" alt="巫术的历史" class="book-cover">
+                            <img src="风水与巫术.jpg" alt="风水与巫术" class="book-cover">
+                        </div>
+                        <div class="post-stats">
+                            <span>转发</span>
+                            <span>236</span>
+                            <span>6645</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 我的页面 -->
+        <div id="profile" class="page">
+            <header class="profile-header">
+                <button class="menu-button">☰</button>
+                <button class="campus-benefits">
+                    <span class="icon">🎓</span>
+                    校园福利专区
+                </button>
+                <div class="right-controls">
+                    <button class="icon-btn">🌓</button>
+                    <button class="icon-btn notification">
+                        🔔
+                        <span class="notification-dot"></span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="user-profile">
+                <img src="头像.jpg" alt="User Avatar" class="avatar">
+                <div class="user-info">
+                    <h2 class="user-id">书友20241125081850781</h2>
+                    <div class="level">Lv. 0 ›</div>
+                </div>
+                <button class="profile-arrow">›</button>
+            </div>
+
+            <div class="account-info">
+                <h3>我的账户 <span class="more-link">更多 ›</span></h3>
+                <div class="account-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">余额</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">月票</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">优惠券</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">章节卡</span>
+                    </div>
+                </div>
+                <button class="recharge-btn">充值</button>
+            </div>
+
+            <div class="vip-banner">
+                <div class="vip-info">
+                    <h3>起点会员</h3>
+                    <p>开通享3万免费有声书、自动签到等特权</p>
+                </div>
+                <button class="vip-btn">立即开通 ›</button>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="福利中心.svg" alt="福利中心" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>福利中心</h4>
+                        <p>做任务领章节卡</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="活动中心.svg" alt="活动中心" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>活动中心</h4>
+                        <p>精彩活动等你来</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="阅读积分.svg" alt="阅读积分" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>阅读积分</h4>
+                        <p>领积分兑好礼</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="卡牌广场.svg" alt="卡牌广场" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>卡牌广场</h4>
+                        <p>首抽必出SSR</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="周边购.svg" alt="周边购" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>周边购</h4>
+                        <p>点击捕捉"红叮"</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="游戏中心.svg" alt="游戏中心" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>游戏中心</h4>
+                        <p>尽享精彩游戏</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <div class="quick-action-item">
+                    <img src="成为主播.svg" alt="成为主播" class="quick-action-icon">
+                    <span>成为主播</span>
+                </div>
+                <div class="quick-action-item">
+                    <img src="达人中心.svg" alt="达人中心" class="quick-action-icon">
+                    <span>达人中心</span>
+                </div>
+                <div class="quick-action-item">
+                    <img src="奇妙世界.svg" alt="奇妙世界" class="quick-action-icon">
+                    <span>奇妙世界</span>
+                </div>
+            </div>
+
+            <div class="recommendation">
+                <img src="猜你喜欢.jpg" alt="Book Cover" class="book-cover">
+                <span class="rec-text">猜你喜欢|《王子的优雅》一伤二十八著 体育</span>
+                <button class="rec-arrow">›</button>
+            </div>
+
+            <div class="menu-list">
+                <button class="menu-item">
+                    <img src="帮助与客服.svg" alt="帮助与客服" class="menu-icon">
+                    <span>帮助与客服</span>
+                    <span class="menu-arrow">›</span>
+                </button>
+                <button class="menu-item">
+                    <img src="加入我们.svg" alt="加入我们" class="menu-icon">
+                    <span>加入我们</span>
+                    <span class="menu-arrow">›</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" data-page="bookshelf">
+                <img src="书架.svg" alt="书架" class="nav-icon">
+                <span>书架</span>
+            </a>
+            <a href="#" class="nav-item" data-page="featured">
+                <img src="精选.svg" alt="精选" class="nav-icon">
+                <span>精选</span>
+            </a>
+            <a href="#" class="nav-item" data-page="listen">
+                <img src="听书.svg" alt="听书" class="nav-icon">
+                <span>听书</span>
+            </a>
+            <a href="#" class="nav-item" data-page="discover">
+                <img src="发现.svg" alt="发现" class="nav-icon">
+                <span>发现</span>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+                <img src="我的.svg" alt="我的" class="nav-icon">
+                <span>我的</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
